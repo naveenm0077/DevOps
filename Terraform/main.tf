@@ -9,11 +9,7 @@ terraform {
   required_version = ">= 1.2"
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
+provider "aws" {
+  region = us-east-1
+  
 }
