@@ -8,3 +8,7 @@ jobs:
         run: echo "hello world"
       - name: goodbye
         run: echo "bye"
+      - name: multi-line
+        run: |
+          echo "hello"
+          echo "from the other side"
